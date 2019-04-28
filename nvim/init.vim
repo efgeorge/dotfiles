@@ -29,6 +29,10 @@ call plug#end()
 " Run xrdb whenever Xdefaults or Xresources are updated.
 	autocmd BufWritePost *Xresources,*Xdefaults !xrdb %
 
+" Enable markdown for vimwiki
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
+
 " Lightline config
 let g:lightline = {
       \ 'colorscheme': 'seoul256',
